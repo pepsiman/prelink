@@ -1120,7 +1120,7 @@ loclistoffset_eq (const void *p, const void *q)
   GElf_Addr *offset1 = (GElf_Addr *)p;
   GElf_Addr *offset2 = (GElf_Addr *)q;
 
-  return *offset1 = *offset2;
+  return *offset1 == *offset2;
 }
 
 static void
